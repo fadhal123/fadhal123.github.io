@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadiah Bunga</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe4e1;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        #greeting {
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color: #ff69b4;
+        }
+
+        #flowerButton {
+            margin-bottom: 50px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #ff69b4;
+            text-decoration: none;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="greeting">Haii, Fadhal punya sesuatu ni buat Ina! Pencet tombol ini yaa.</div>
+        <a href="index.html" id="flowerButton">Pencet Aku</a>
+    </div>
+    <canvas id="canvas"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
